@@ -26,7 +26,26 @@ This project is licensed under the ${license} license.`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+${renderLicenseBadge(data.license)}
+
+## Description
+  ${data.description}
   
+## Table of Contents
+-space[Installation](#installation)
+-space[Usage](#usage)
+  ${renderLicenseLink(data.license)}
+  
+## Installation
+  To install the dependencies needed to run the program, run the command below:
+  \`\`\`
+  npm install
+  \`\`\`
+  
+## Usage
+  ${data.usage || 'Usage instructions found here.'}
+
   
 ${renderLicenseBadge(data.license)}
 `;
