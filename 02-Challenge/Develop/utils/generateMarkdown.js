@@ -59,6 +59,10 @@ ${renderLicenseBadge(data.license)}
   ${data.installation || 'Installation instructions found here.'}
   
 ## Usage
+To run the program, run the command below to after navigating to the correct directory:
+  \`\`\`
+  node index.js
+  \`\`\`
   ${data.usage || 'Usage instructions found here.'}
 
 ## Contributing
@@ -75,7 +79,7 @@ ${renderLicenseBadge(data.license)}
   If you have any questions or concerns, please don't hesitate to reach out to me  at ${data.email || 'email address'}. Or you can visit my GitHub profile at [${data.githubUsername}](https://github.com/${data.githubUsername}).
 
 ## License
-This project is licensed under the ${renderLicenseBadge(data.license)} license.
+This project is licensed under the ${data.license} license.
 
 
 `;
