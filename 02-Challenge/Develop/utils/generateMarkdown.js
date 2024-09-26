@@ -77,7 +77,8 @@ To run the program, run the command below to after navigating to the correct dir
 ## License
 This project is licensed under the ${data.license} license.
 
-
+## Walkthrough
+https://drive.google.com/file/d/1y6pDPcdCvBtfB2Jq1CKX6kTkq7HoheMM/view?usp=sharing
 `;
 }
 
