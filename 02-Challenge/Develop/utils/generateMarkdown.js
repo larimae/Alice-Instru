@@ -4,25 +4,21 @@
 function renderLicenseBadge(license) {
   if (!license || license === 'None') return '';
 
-  // Use a mapping for license names
-  const licenseMap = {
-    'MIT': 'MIT',
-    'GPL-3.0': 'GPLv3',
-    'Apache-2.0': 'Apache%202.0',
-    'BSD-3-Clause': 'BSD%203-Clause'
+  const badges = {
+      'MIT': 'MIT',
+      'GPL-3.0': 'GPL%203.0',
+      'Apache-2.0': 'Apache%202.0',
+      'BSD-3-Clause': 'BSD%203--Clause'
   };
 
-  const badgeLicense = licenseMap[license];
-  if (!badgeLicense) return '';
-
-  return `[![License](https://img.shields.io/badge/license-${badgeLicense}-blue.svg)](https://opensource.org/licenses/${license})`;
+  return `[![License](https://img.shields.io/badge/license-${badges[license]}-blue.svg)]`;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (!license) return '';
-  return `[License](#license)\n`;
+  return `License(#license)\n`;
 }
 
 // TODO: Create a function that returns the license section of README

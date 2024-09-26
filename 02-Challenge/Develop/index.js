@@ -56,11 +56,6 @@ const questions = [
         name: 'questions',
         message: 'Provide any additional questions or concerns for your project:'
     },
-    {
-        type: 'confirm',
-        name: 'generateReadme',
-        message: 'Would you like to generate a README file?'
-    }
 ];
 
 // TODO: Create a function to write README file
